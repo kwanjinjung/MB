@@ -73,6 +73,7 @@ def readparsefile(fn: Union[bytes,Path], logdatatype: str, firsttime: int=0, exp
 
     # Extract the meta data and physiological traces
     LOGGER.info(f"Parsing {logdatatype} data...")
+    
     for line in [line for line in lines if line]:
 
         # Strip any leading and trailing whitespace and comments
